@@ -1,10 +1,11 @@
 import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import { app } from "../../Base";
-import { GlobalContext } from "./GlobalContext";
+// import { GlobalContext } from "./GlobalContext";
+import { ProductProvider } from "./ProductProvider/ProductProvider";
 
 const UploadProducts = () => {
-  const { current } = useContext(GlobalContext);
+  const { current } = useContext(ProductProvider);
 
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
