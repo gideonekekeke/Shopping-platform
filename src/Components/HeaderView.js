@@ -7,10 +7,10 @@ import { Button } from "antd";
 import PolymerIcon from "@material-ui/icons/Polymer";
 import { app } from "../Base";
 import ModalPage from "./MainBody/ModalPage";
-import { GlobalContext } from "./MainBody/GlobalContext";
+import { ProductProvider } from "./MainBody/ProductProvider/ProductProvider";
 
 const HeaderView = () => {
-  const { current } = useContext(GlobalContext);
+  const { current } = useContext(ProductProvider);
   const [show, setShow] = useState(false);
 
   const Toggle = () => {
